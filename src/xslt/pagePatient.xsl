@@ -3,7 +3,7 @@
 <!--
     Document   : pagePatient.xsl
     Created on : 20 octobre 2019, 22:08
-    Author     : matrairq
+    Author     : matrairq et laurenth
     Description:
         Purpose of transformation follows.
 -->
