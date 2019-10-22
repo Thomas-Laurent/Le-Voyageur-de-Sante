@@ -33,8 +33,8 @@
             <nom>Alécole</nom>
             <prénom>Yvon</prénom>
             <sexe>M</sexe>
-            <naissance>1998-08-22</naissance>
-            <numéro>198081305545852</numéro>
+            <naissance>1998-08-02</naissance>
+            <numéro>198082205545852</numéro>
             <adresse><!--Adresse d'Yvon-->    
                 <étage>6</étage>
                 <numéro>50</numéro>
@@ -43,7 +43,7 @@
                 <ville>Grenoble</ville>
             </adresse>
             <!--Liste des visites et actes d'Yvon-->
-            <visite date="2015-10-08" intervenant="001">
+            <visite date="2015-12-08" intervenant="001">
                 <acte id="109"/>
             </visite>
         </patient>
@@ -59,14 +59,14 @@
                 <ville>La Tronche</ville>
             </adresse>
             <!--Liste des visites et actes d'Elvire-->
-            <visite date="2015-09-08">
+            <visite date="2015-12-08">
                 <acte id="300"/>
             </visite>
         </patient>
         <patient><!--Oscare est née le 25 mars 75 en France, à Chambéry (n° 65 dans la Savoie) Il s'agissait de la 692e naissance. -->
             <nom>Pien</nom>
             <prénom>Oscare</prénom>
-            <sexe>F</sexe>
+            <sexe>M</sexe>
             <naissance>1975-03-25</naissance>
             <numéro>275037306569202</numéro>
             <adresse><!--Adresse d'Oscare-->
@@ -75,7 +75,7 @@
                 <ville>Grenoble</ville>
             </adresse>
             <!--Liste des visites et actes d'Oscare-->
-            <visite date="2015-11-08">
+            <visite date="2015-12-08">
                 <acte id="101"/>
                 <acte id="105"/>
             </visite>
@@ -93,7 +93,7 @@
                 <ville>Grenoble</ville>
             </adresse>
             <!--Liste des visites et actes de Xavier-->
-            <visite date="2015-08-08">
+            <visite date="2015-12-08">
                 <acte id="111"/>
             </visite>
         </patient>

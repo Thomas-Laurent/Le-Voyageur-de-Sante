@@ -10,16 +10,16 @@
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
                 xmlns:ci="http://www.ujf-grenoble.fr/l3miage/medical"
-                xmlns:act="http://www.ujf-grenoble.fr/l3miage/actes"
-                >
+                xmlns:act="http://www.ujf-grenoble.fr/l3miage/actes" >
     <xsl:output method="html"/>
 
-    <xsl:param name="destinedId">001</xsl:param>
+    <xsl:param name="idInfirmier" select="001"/>
+    <xsl:variable name="visiteDuJour" select="//ci:patient/ci:visite[@intervenant=$idInfirmier]"/>
     <xsl:variable name="actes" select="document('../xml/actes.xml', /)/act:ngap"/>
     <xsl:template match="/">
         <html>
             <head>
-                <title>Profil de <xsl:value-of select='//ci:infirmier[@id=$destinedId]/ci:nom'/></title>
+                <title>Profil de <xsl:value-of select='//ci:infirmier[@id=$idInfirmier]/ci:nom'/></title>
                 <link>
                     <xsl:attribute name="href">pageInfirmier.css</xsl:attribute>
                     <xsl:attribute name="type">text/css</xsl:attribute>
@@ -46,12 +46,12 @@
                 </script>
             </head>
             <body>
-                Bonjour <xsl:value-of select='//ci:infirmier[@id=$destinedId]/ci:nom'/>,<br/>
-                Aujourd'hui, vous avez <xsl:value-of select="count(//ci:patient/ci:visite[@intervenant=$destinedId])"/> patients
+                Bonjour <xsl:value-of select='//ci:infirmier[@id=$idInfirmier]/ci:nom'/>,<br/>
+                Aujourd'hui, vous avez <xsl:value-of select="count($visiteDuJour)"/> patients
                 <br/>
-                
+
                 <ul>
-                    <xsl:apply-templates select="//ci:patients/ci:patient">
+                    <xsl:apply-templates select="$visiteDuJour/..">
                         <xsl:sort select="ci:visite/@date"/>
                     </xsl:apply-templates>
                 </ul>
@@ -70,8 +70,8 @@
             <xsl:attribute name="type">button</xsl:attribute>
             <xsl:attribute name="value">Facture</xsl:attribute>
             <xsl:attribute name="onclick">
-                openFacture('<xsl:value-of select="ci:prénom"/>', 
-                            '<xsl:value-of select="ci:nom"/>', 
+                openFacture('<xsl:value-of select="ci:prénom"/>',
+                            '<xsl:value-of select="ci:nom"/>',
                             '<xsl:value-of select="ci:visite/ci:acte"/>')
             </xsl:attribute>
         </input>
@@ -84,7 +84,7 @@
         <xsl:value-of select="ci:numéro"/>&#160;<xsl:value-of select="ci:rue"/>,
         <xsl:value-of select="ci:codePostal"/>&#160;<xsl:value-of select="ci:ville"/>
     </xsl:template>
-    
+
     <xsl:template match="ci:visite" >
         <li>
             <p> Visite du <xsl:value-of select="@date" /></p>
@@ -97,7 +97,7 @@
         <li>
             <xsl:variable name="id" select="@id"/>
             <xsl:value-of select="$actes/act:actes/act:acte[@id = $id]"/>
-            
+
         </li>
     </xsl:template>
 
