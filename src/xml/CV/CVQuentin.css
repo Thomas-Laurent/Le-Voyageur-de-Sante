@@ -50,6 +50,14 @@ h2{
   margin-block-end: 0px;
 }
 
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
 /*DIVISION INFOS*/
 #line{
   margin-left: auto;
@@ -70,6 +78,14 @@ h2{
 
 .infos p{
   padding: 8px;
+}
+
+.infos a{
+  color: white;
+}
+
+.infos a:hover{
+  color: white;
 }
 
 /*DIVISION CONTENU*/
@@ -200,14 +216,12 @@ td:hover{
   list-style: none;
 }
 
-a{
+#cont2 a{
   color: #4A4A4A;
-  text-decoration: none;
 }
 
-a:hover{
+#cont2 a:hover{
   color: #1580eb;
-  text-decoration: underline;
 }
 
 /*DIVISION FOOTER*/
@@ -219,11 +233,9 @@ footer{
 }
 
 #link_footer{
-  text-decoration: none;
   color: #E5E54A;
 }
 
 #link_footer:hover{
   color: #48dbfb;
-  text-decoration: underline;
 }
