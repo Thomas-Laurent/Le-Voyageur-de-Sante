@@ -1,29 +1,16 @@
 /*CSS COMMUN*/
 @font-face{
-  font-family: "Supria";
-  src: url("Supria.ttf");
+  font-family: "Aller";
+  src: url("./Fonts/Aller_Rg.ttf");
 }
 
 body{
-    color: black;
-    margin: 0px;
-}
-
-h1{
-  font-size: 60px;
-  font-style: italic;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  font-family: 'Supria', sans-serif;
-  float: right;
-}
-
-h2{
-  font-size: 30px;
-  font-style: italic;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  font-family: 'Supria', sans-serif;
+  font-family: "Aller", sans-serif;
+  display: center;
+  color: #4A4A4A;
+  margin: 0px;
+  background-color: #E5E5E5;
+  font-size: 17px;
 }
 
 /*DIVISION ENTETE*/
@@ -43,12 +30,32 @@ h2{
 
 #infosEnt{
   float: right;
-  margin: 50px;
+  margin: 5%;
+}
+
+h1{
+  font-size: 60px;
+  font-style: italic;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  float: right;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 30px;
+  font-style: italic;
+  font-weight: normal;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
 }
 
 /*DIVISION INFOS*/
 #line{
-  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(#E5E54A,#E5E5E5);
+  text-align: center;
 }
 
 .infos{
@@ -56,8 +63,9 @@ h2{
   color: white;
   background-color: #4D4D4D;
   display: inline-block;
-  margin-left: 10px;
+  margin-left: auto;
   margin-right: auto;
+  font-weight: normal;
 }
 
 .infos p{
@@ -65,63 +73,157 @@ h2{
 }
 
 /*DIVISION CONTENU*/
+/*COMMUN*/
+#content{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
 .contenu{
-  background-color: #E5E5E5;
+  background-color: white;
 }
 
 h3{
-  font-size: 30px;
-  font-style: italic;
+  font-size: 25px;
+  font-weight: bold;
   margin-block-start: 0px;
   margin-block-end: 0px;
-  font-family: 'Supria', sans-serif;
   background-color: #E5E54A;
   color: #4A4A4A;
-}
-
-li{
-  color: #4A4A4A;
-  list-style: none;
-  font-weight: bold;
-}
-
-td{
-  color: #4A4A4A;
-  font-weight: bold;
-}
-
-#con1{
+  padding: 4px;
   text-align: center;
-  background-color: white;
-  width: 50px;
 }
 
-#cont2{
-  background-color: white;
+.divContent{
+  margin-left: 10%;
+  margin-right: 10%;
+  border-bottom: 1px solid black;
 }
 
-#con1,#cont2{
-  width: 50px;
-  display: inline-block;
-  height: 50px;
-  margin-top: 23%;
+li:hover{
+  background-color: #48dbfb;
+}
+
+td:hover{
+  background-color: #48dbfb;
+}
+
+/*CONT1*/
+#cont1{
+  float: left;
+  width: 48%;
+}
+
+#last1 {
+  border: none;
 }
 
 #cont1 h4{
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   color: #FF0000;
+}
+
+#cont1 h5{
+  font-size: 17px;
+  margin: 0px;
+  color: black;
+}
+
+#cont1 ul{
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+#cont1 li{
+  font-weight: normal;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+#cont1 p{
+  font-weight: normal;
+}
+
+#cont1 p:hover{
+  background-color: #48dbfb;
+}
+
+#cont1 table{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#cont1 td{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*CONT2*/
+#cont2{
+  margin-left: 52%;
+}
+
+#last2 {
+  border: none;
+}
+
+#last3 {
+  border: none;
+  padding-bottom: 10px;
+}
+
+#cont2 h4{
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#cont2 h5{
+  font-size: 17px;
+  color: #FF0000;
+  margin: 0px;
+}
+
+#cont2 ul{
+  padding: 0px;
+  margin: 0px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#cont2 li{
+  list-style: none;
+}
+
+a{
+  color: #4A4A4A;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #1580eb;
+  text-decoration: underline;
 }
 
 /*DIVISION FOOTER*/
 footer{
+  padding: 30px;
+  color: #E5E54A;
+  background-color: #4A4A4A;
 	text-align: center;
 }
 
 #link_footer{
   text-decoration: none;
-  color: black;
+  color: #E5E54A;
 }
 
 #link_footer:hover{
-  color: #4CAF50;
-  font-weight: bold;
+  color: #48dbfb;
+  text-decoration: underline;
 }
