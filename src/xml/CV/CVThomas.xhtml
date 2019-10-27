@@ -1,41 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>CV de Thomas LAURENT</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link href='CVThomas.css' type='text/css' rel='stylesheet' /> 
+        <link href='CVThomas.css' type='text/css' rel='stylesheet' />
     </head>
     <body>
         <div class="entete">
-            <img src="lincoln.png" alt="Photo de Thomas" id="pp"></img>
+            <img src="thomas.jpg" alt="Photo de Thomas" id="pp"></img>
             <div class="infos">
                 <h1>Thomas LAURENT</h1>
                 <table>
                     <tr>
                         <td>
-                            <img src="iconMail.png" alt="Icon Mail"></img>
+                            <img src="iconMail.png" alt="Icon Mail" class="icon"></img>
                         </td>
-                        <td>
-                            <a href="thomas.laurent38@gmail.com" class="link">
-                                THOMAS.LAURENT38@GMAIL.COM
-                            </a>
-                        </td>
+                        <td>THOMAS.LAURENT38@GMAIL.COM</td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="iconPhone.png" alt="Icon Phone"></img>
+                            <img src="iconPhone.png" alt="Icon Phone" class="icon"></img>
                         </td>
                         <td>06.41.88.50.49</td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="iconLoc.png" alt="Icon Localisation"></img>
+                            <img src="iconLoc.png" alt="Icon Localisation" class="icon"></img>
                         </td>
                         <td>
                             <a href="https://www.google.com/maps/place/150+Chemin+du+Verger,+38220+Saint-Pierre-de-M%C3%A9sage/@45.0561282,5.7594382,17z/data=!3m1!4b1!4m5!3m4!1s0x478a89dc837c2f97:0x7f5d2bc2206e98b6!8m2!3d45.0561282!4d5.7616269" class="link">
@@ -44,49 +35,152 @@ and open the template in the editor.
                         </td>
                     </tr>
                     <tr>
-                        <td><img src="iconWebsite.png" alt="Icon Website"></img></td>
-                        <td><a href="https://www-timc.imag.fr/nicolas-glade" class="link">SITE WEB</a></td>
+                        <td><img src="iconWebsite.png" alt="Icon Website" class="icon"></img></td>
+                        <td><a href="https://thomaspesquet.esa.int/" class="link">SITE WEB</a></td>
                     </tr>
                 </table>
             </div>
         </div>
-
-        <div class="contenu">
-            <h1>CURSUS</h1>
+        <div class="parcours ">
+          <h1>CURSUS</h1>
+          <table>
+              <tr>
+                  <th>DATE</th>
+                  <th>FORMATION</th>
+                  <th>LOCALISATION</th>
+              </tr>
+              <tr>
+                  <td>2019 - En Cours</td>
+                  <td>Licence MIAGE</td>
+                  <td>IM2AG à Saint-Martin-d'Hères (38)</td>
+              </tr>
+              <tr>
+                  <td>2018 - 2019</td>
+                  <td>Licence Maths-Info</td>
+                  <td>IM2AG à Saint-Martin-d'Hères (38)</td>
+              </tr>
+              <tr>
+                  <td>2016 - 2018</td>
+                  <td>DUT Info</td>
+                  <td>IUT2 à Grenoble (38)</td>
+              </tr>
+              <tr>
+                  <td>2014 - 2016</td>
+                  <td>Bac Scientifique</td>
+                  <td>Lycée Portes de l'Oisans à Vizille (38)</td>
+              </tr>
+          </table>
+          </div>
+          <div class="parcours">
+            <h1>EXPÉRIENCE PROFESSIONELLE</h1>
             <table>
                 <tr>
-                    <th>DATE</th>
-                    <th>FORMATION</th>
+                    <th>DATES</th>
+                    <th>LIEU</th>
                     <th>LOCALISATION</th>
+                    <th>CADRE</th>
+                    <th>MISSIONS</th>
                 </tr>
                 <tr>
-                    <td>2016</td>
-                    <td>Bac Scientifique</td>
-                    <td>Lycée Portes de l'Oisans à Vizille (38)</td>
+                    <td>Mai 2019 - Juin 2019</td>
+                    <td>Département de Chimie Moléculaire</td>
+                    <td>Université Grenoble Alpes (38)</td>
+                    <td>Stage L3 Maths-Info</td>
+                    <td>Soumissions Jobs sur Cluster, Workflow en XML, Client JS, Serveur en Go, BD en SQLite</td>
                 </tr>
                 <tr>
-                    <td>2016 - 2018</td>
-                    <td>DUT Info</td>
-                    <td>IUT2 à Grenoble (38)</td>
+                    <td>Avril 2018 - Juillet 2018</td>
+                    <td>TECHNIDATA France</td>
+                    <td>Montbonnot-Saint-Martin (38)</td>
+                    <td>Stage DUT Info puis CDD</td>
+                    <td>Gestion machines virtuelles, VPN, Relationnel avec clients et filiales de TD, MàJ CRM, Prog. JavaScript</td>
                 </tr>
                 <tr>
-                    <td>2018 - 2019</td>
-                    <td>Licence Maths-Info</td>
-                    <td>IM2AG à Saint-Martin-d'Hères (38)</td>
-                </tr>                
+                    <td>Février 2013</td>
+                    <td>Sintégra - Géomètre Experts</td>
+                    <td>Meylan (38)</td>
+                    <td>Stage de découverte professionnelle</td>
+                    <td>Découverte du métier de géomètre</td>
+                </tr>
             </table>
-
-            <h1>HOBBIES</h1>
+            </div>
+          <div class="divCompHob" id="competences">
+            <h1>COMPÉTENCES</h1>
+            <h2>Programmation</h2>
             <ul>
-                <li>Jeux-Vidéos</li>
-                <li>Football</li>
-                <li>Ski</li>
-                <li>Cinéma</li>
+                  <li>Web (HTML, CSS, JavaScript, XML, PHP, Go, MySQL, Android)</li>
+                  <li>Orientée Objet (Java, C++, Python)</li>
+                  <li>Autres (C, Assembleur, Ruby, Ada, Scilab)</li>
             </ul>
+            <h2>Logiciels/Outils</h2>
+            <ul>
+                  <li>IDE : NetBeans, Eclipse, CodeBlock, Android Studio</li>
+                  <li>Éditeurs : Atom, Rstudio, Spyder</li>
+                  <li>Autres : Wireshark, MS Dynamics, Visual Paradigm</li>
+                  <li>Technologie Git (GitHub/GitLabs)</li>
+            </ul>
+            <h2>Travaux Réalisés</h2>
+            <ul>
+                  <li>Projet Java MVC avec conception UML et Interface avec Swing </li>
+                  <li>Interpréteur en C++ avec Pattern Composite et CppUnit</li>
+                  <li>Jeu Vidéo en 3D avec Ruby et Gosu - GameJam 2018 - Premier prix</li>
+                  <li>Application ludo-éducative multiplateforme en JavaScript</li>
+                  <li>Programmation de fonctions de dématriçage en Python pour le CEA</li>
+            </ul>
+          </div>
+          <div class="divCompHob" id="hobbies">
+            <h1>HOBBIES</h1>
+            <h2>Sports</h2>
+            <ul>
+                  <li>Football - 7 ans de pratique en Club</li>
+                  <li>Ski - 17 ans de pratique dont 12 en Club</li>
+                  <li>Volley-ball</li>
+                  <li>Basketball</li>
+            </ul>
+            <h2>Voyages</h2>
+            <ul>
+                  <li>États-Unis</li>
+                  <li>Viêt Nam</li>
+                  <li>Sénégal</li>
+                  <li>Maroc</li>
+                  <li>Europe</li>
+            </ul>
+            <h2>Autres loisirs</h2>
+            <ul>
+                  <li>Jeux-Vidéos</li>
+                  <li>Guitare</li>
+                  <li>Cinéma</li>
+            </ul>
+        </div>
+        <div class="last">
+          <div class="others">
+          <h1>LANGUES</h1>
+          <table>
+            <tr>
+              <td><img src="iconUK.png" alt="Drapeau Royaume-Uni"></img></td>
+              <td><img src="iconSpain.png" alt="Drapeau Espagne"></img></td>
+            </tr>
+            <tr>
+              <td>Anglais B2</td>
+              <td>Espagnol B1</td>
+            </tr>
+          </table>
+        </div>
+          <div class="others">
+          <h1>AUTRES</h1>
+          <table>
+            <tr>
+              <td><img src="iconCar.png" alt="Icon Voiture" class="icon"></img></td>
+            </tr>
+            <tr>
+              <td>Permis B (Véhiculé)</td>
+            </tr>
+          </table>
+        </div>
         </div>
         <footer>
             <p>Ce CV a été fait en collaboration avec
-                <a href="https://www-timc.imag.fr/nicolas-glade">Khadidiatou DIAGNE</a>
+                <a href="CVQuentin.xhtml" id="link_footer">Quentin MATRAIRE</a>
             </p>
         </footer>
     </body>

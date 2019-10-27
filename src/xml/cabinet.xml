@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cabinet xmlns="http://www.ujf-grenoble.fr/l3miage/medical" 
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+<cabinet xmlns="http://www.ujf-grenoble.fr/l3miage/medical"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://www.ujf-grenoble.fr/l3miage/medical ../xsd/cabinetInfirmier.xsd"><!--Racine du document cabinetInfirmier.xml-->
     <nom>Soins à Grenoble</nom>
-    <adresse><!--Adresse du cabinet-->    
+    <adresse><!--Adresse du cabinet-->
         <numéro>60</numéro>
         <rue>rue de la Chimie</rue>
         <codePostal>38041</codePostal>
@@ -14,18 +14,18 @@
         <infirmier id="001">
             <nom>Fréchie</nom>
             <prénom>Sarah</prénom>
-            <photo>sarah.png</photo>            
+            <photo>sarah.png</photo>
         </infirmier>
         <infirmier id="002">
             <nom>Stické</nom>
             <prénom>Sophie</prénom>
-            <photo>sophie.png</photo> 
+            <photo>sophie.png</photo>
         </infirmier>
         <infirmier id="003">
             <nom>Ochon</nom>
             <prénom>Paul</prénom>
-            <photo>paul.png</photo> 
-        </infirmier>        
+            <photo>paul.png</photo>
+        </infirmier>
     </infirmiers>
     <patients>
         <!--Liste des patients-->
@@ -35,7 +35,7 @@
             <sexe>M</sexe>
             <naissance>1998-08-02</naissance>
             <numéro>198082205545852</numéro>
-            <adresse><!--Adresse d'Yvon-->    
+            <adresse><!--Adresse d'Yvon-->
                 <étage>6</étage>
                 <numéro>50</numéro>
                 <rue>avenue Félix Viallet</rue>
@@ -86,7 +86,7 @@
             <sexe>M</sexe>
             <naissance>2011-08-02</naissance>
             <numéro>111083306303521</numéro>
-            <adresse><!--Adresse de Xavier-->    
+            <adresse><!--Adresse de Xavier-->
                 <numéro>25</numéro>
                 <rue>rue des Martyrs</rue>
                 <codePostal>38042</codePostal>
