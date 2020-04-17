@@ -12,7 +12,7 @@
         <html>
             <head>
                 <title>Profil de <xsl:value-of select='//infirmier[@id=$idInfirmier]/nom'/></title>
-                <img class="photo_infirmiere" src="./css/infirmiere1.png" alt="Image d'Infirmière">
+                
                 <link>
                     <xsl:attribute name="href">./css/pageInfirmier.css</xsl:attribute>
                     <xsl:attribute name="type">text/css</xsl:attribute>
@@ -35,11 +35,23 @@
                         factureText = "Facture pour : " + prenom + " " + nom;
                         factureWindow.document.write(factureText);
                     }
+                    function avant(image){
+                        image.setAttribute('src', './css/infirmiere2.png');
+                    }
+                    function apres(image){
+                        image.setAttribute('src', './css/infirmiere1.png');
+                    }
                     ]]>
                 </script>
             </head>
             <body>
-                Bonjour <xsl:value-of select='//infirmier[@id=$idInfirmier]/nom'/>,<br/>
+                <img> 
+                    <xsl:attribute name="src">./css/infirmiere1.png</xsl:attribute>
+                    <xsl:attribute name="alt">Image d'Infirmière</xsl:attribute>
+                    <xsl:attribute name="onmouseover">avant(this)</xsl:attribute>
+                    <xsl:attribute name="onmouseout">apres(this)</xsl:attribute>
+                </img>
+                    Bonjour <xsl:value-of select='//infirmier[@id=$idInfirmier]/nom'/>,<br/>
                 Aujourd'hui, vous avez <xsl:value-of select="count($visiteDuJour)"/> patients
                 <br/>
 
