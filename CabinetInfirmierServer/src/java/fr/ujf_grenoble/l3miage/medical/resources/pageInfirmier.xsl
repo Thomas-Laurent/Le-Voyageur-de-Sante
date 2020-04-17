@@ -12,6 +12,7 @@
         <html>
             <head>
                 <title>Profil de <xsl:value-of select='//infirmier[@id=$idInfirmier]/nom'/></title>
+                <img class="photo_infirmiere" src="./css/infirmiere1.png" alt="Image d'Infirmière">
                 <link>
                     <xsl:attribute name="href">./css/pageInfirmier.css</xsl:attribute>
                     <xsl:attribute name="type">text/css</xsl:attribute>

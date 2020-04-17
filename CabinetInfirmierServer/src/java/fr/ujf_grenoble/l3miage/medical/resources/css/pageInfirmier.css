@@ -78,3 +78,7 @@ h2:hover{
   color: #ffdd59;
   background-color: black;
 }
+
+.photo_infirmiere:hover{
+  src: url("./css/infirmiere2.png");
+}
