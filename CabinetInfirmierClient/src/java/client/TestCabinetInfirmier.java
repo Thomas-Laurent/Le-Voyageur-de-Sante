@@ -21,7 +21,7 @@ public class TestCabinetInfirmier {
         
         System.out.println(getNomCabinet());
         
-        System.out.println(getStrLength("zebi"));
+        System.out.println(getStrLength("test"));
         
     }
 

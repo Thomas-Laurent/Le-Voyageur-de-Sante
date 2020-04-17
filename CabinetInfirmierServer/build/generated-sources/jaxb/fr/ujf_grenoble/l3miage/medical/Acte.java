@@ -1,8 +1,8 @@
 //
-// Ce fichier a ï¿½tï¿½ gï¿½nï¿½rï¿½ par l'implï¿½mentation de rï¿½fï¿½rence JavaTM Architecture for XML Binding (JAXB), v2.2.5-2 
+// Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.5-2 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Toute modification apportï¿½e ï¿½ ce fichier sera perdue lors de la recompilation du schï¿½ma source. 
-// Gï¿½nï¿½rï¿½ le : 2020.04.17 ï¿½ 12:08:05 AM CEST 
+// Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
+// Généré le : 2020.04.17 à 06:51:40 PM CEST 
 //
 
 
@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlValue;
 /**
  * <p>Classe Java pour Acte complex type.
  * 
- * <p>Le fragment de schï¿½ma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
  * &lt;complexType name="Acte">
@@ -44,7 +44,7 @@ public class Acte {
     protected String id;
 
     /**
-     * Obtient la valeur de la propriï¿½tï¿½ value.
+     * Obtient la valeur de la propriété value.
      * 
      * @return
      *     possible object is
@@ -56,7 +56,7 @@ public class Acte {
     }
 
     /**
-     * Dï¿½finit la valeur de la propriï¿½tï¿½ value.
+     * Définit la valeur de la propriété value.
      * 
      * @param value
      *     allowed object is
@@ -68,7 +68,7 @@ public class Acte {
     }
 
     /**
-     * Obtient la valeur de la propriï¿½tï¿½ id.
+     * Obtient la valeur de la propriété id.
      * 
      * @return
      *     possible object is
@@ -80,7 +80,7 @@ public class Acte {
     }
 
     /**
-     * Dï¿½finit la valeur de la propriï¿½tï¿½ id.
+     * Définit la valeur de la propriété id.
      * 
      * @param value
      *     allowed object is

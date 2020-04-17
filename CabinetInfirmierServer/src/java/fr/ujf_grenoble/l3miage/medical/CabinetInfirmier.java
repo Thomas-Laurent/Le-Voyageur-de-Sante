@@ -90,7 +90,7 @@ public class CabinetInfirmier {
         InputStream resourceStream = this.getClass().getResourceAsStream(resourceFile);
         // Retourne ce flux d'entrée sous la forme d'un flux source
         return new StreamSource(resourceStream);
-    } 
+    }
 
     /**
      * Web service operation
@@ -154,7 +154,7 @@ public class CabinetInfirmier {
             Document doc = DocumentFactory.fromObject(c);
             
             // On récupère ici la feuille de transformation de l'infirmière
-            StreamSource xslSource = fromResource("resources/test.xsl");
+            StreamSource xslSource = fromResource("resources/pageInfirmier.xsl");
             // On fabrique une processeur de document (Transformer)
             Transformer transformer = TransformerFactory.newInstance().newTransformer(xslSource);
             // On donne un nom au paramètre ; ce nom est celui utilisé dans la feuille de transformation

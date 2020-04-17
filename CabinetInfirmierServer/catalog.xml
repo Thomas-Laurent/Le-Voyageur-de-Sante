@@ -2,4 +2,6 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
     <system systemId="file:/C:/Users/Quentin/Desktop/L3%20MIAGE/Projet/CabinetInfirmierServer/src/java/fr/ujf_grenoble/l3miage/medical/resources/cabinetInfirmier.xsd" uri="src/conf/xml-resources/jaxb/CabinetBinding/cabinetInfirmier.xsd"/>
     <system systemId="file:/C:/Users/Quentin/Desktop/L3%20MIAGE/Projet/CabinetInfirmierServer/src/java/fr/ujf_grenoble/l3miage/medical/resources/XmlRootBinding.xml" uri="src/conf/xml-resources/jaxb/CabinetBinding/XmlRootBinding.xml"/>
+    <system systemId="file:/C:/Users/Quentin/Desktop/L3%20MIAGE/Projet/Le-Voyageur-de-Sante/CabinetInfirmierServer/src/java/fr/ujf_grenoble/l3miage/medical/XmlRootBinding.xml" uri="src/conf/xml-resources/jaxb/CabinetBinding/XmlRootBinding.xml"/>
+    <system systemId="file:/C:/Users/Quentin/Desktop/L3%20MIAGE/Projet/Le-Voyageur-de-Sante/CabinetInfirmierServer/src/java/fr/ujf_grenoble/l3miage/medical/resources/XmlRootBinding.xml" uri="src/conf/xml-resources/jaxb/CabinetBinding/XmlRootBinding.xml"/>
 </catalog>
